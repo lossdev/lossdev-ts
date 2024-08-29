@@ -1,11 +1,21 @@
 import React from 'react';
 import { RootBackground } from './RootBackground';
+import { TopBar } from './TopBar';
+import { MainContainer } from './MainContainer';
+import { OccupationContainer } from './OccupationContainer';
+import { SocialsContainer } from './SocialsContainer';
+import { SpecialtiesContainer } from './SpecialtiesContainer';
 
 function App() {
     return(
-    <div>
+    <div className="bg-gradient-to-br from-cyan-500 to-indigo-500">
         <RootBackground>
-            <h1 className="text-blue-200 text-3xl font-bold underline">Hello World!</h1>
+            <TopBar />
+            <MainContainer>
+                <OccupationContainer />
+                <SpecialtiesContainer />
+                <SocialsContainer />
+            </MainContainer>
         </RootBackground>
     </div>
     );
