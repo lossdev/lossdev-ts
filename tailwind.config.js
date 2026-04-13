@@ -1,6 +1,5 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,tsx}"],
+export default {
+  content: ['./index.html', './src/**/*.{html,ts,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -14,7 +13,7 @@ module.exports = {
     fontFamily: {
       'jbmono-light': ['JetBrainsMono-Light'],
       'jbmono': ['JetBrainsMono-Regular'],
-      'jbmono-bold': ['JetBrainsMono-Bold'], 
+      'jbmono-bold': ['JetBrainsMono-Bold'],
     },
   },
   plugins: [],
